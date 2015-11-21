@@ -3,10 +3,10 @@ import json
 
 
 def analyzeSentiment(tweet, scores):
-	words = tweet.split()  # splits tweet into words
-	total = 0
-	for word in words:  # for word in tweet
-		if word in scores:  # if word is a sentiment term
+    words = tweet.split()  # splits tweet into words
+    total = 0
+    for word in words:  # for word in tweet
+        if word in scores:  # if word is a sentiment term
 			total += scores[word]  # add sentiment score to total
 	print total
 

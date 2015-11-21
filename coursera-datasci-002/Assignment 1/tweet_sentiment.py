@@ -8,7 +8,7 @@ def analyzeSentiment(tweet, scores):
     for word in words:  # for word in tweet
         if word in scores:  # if word is a sentiment term
 			total += scores[word]  # add sentiment score to total
-	print total
+    print total
 
 
 def main():
